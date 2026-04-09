@@ -16,4 +16,10 @@
   <url><loc>https://www.tausigpi.com/consulting.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.tausigpi.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.tausigpi.com/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.tausigpi.com/briefing-ai-evidence.html</loc></url>
+  <url><loc>https://www.tausigpi.com/briefing-osint-methodology.html</loc></url>
+  <url><loc>https://www.tausigpi.com/briefing-background-investigations.html</loc></url>
+  <url><loc>https://www.tausigpi.com/briefing-evidence-preservation.html</loc></url>
+  <url><loc>https://www.tausigpi.com/briefing-daubert-digital.html</loc></url>
+  <url><loc>https://www.tausigpi.com/briefing-outside-investigators.html</loc></url>
 </urlset>
