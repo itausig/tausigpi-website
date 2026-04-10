@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Evidence Preservation: A Practical Framework | Tausig &amp; Associates</title>
   <meta name="description" content="Digital evidence preservation requires immediate action. Learn the methodology, litigation hold obligations, and common attorney mistakes before evidence disappears.">
-  <link rel="canonical" href="https://www.tausigpi.com/briefing-evidence-preservation.html">
+  <link rel="canonical" href="https://tausigpi.com/briefing-evidence-preservation.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Digital Evidence Preservation: A Practical Framework | Tausig &amp; Associates">
   <meta property="og:description" content="Digital evidence preservation requires immediate action. Learn the methodology, litigation hold obligations, and common attorney mistakes before evidence disappears.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tausigpi.com/briefing-evidence-preservation.html">
+  <meta property="og:url" content="https://tausigpi.com/briefing-evidence-preservation.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -41,13 +42,13 @@
     "publisher": {
       "@type": "Organization",
       "name": "Tausig &amp; Associates",
-      "url": "https://www.tausigpi.com"
+      "url": "https://tausigpi.com"
     },
     "datePublished": "2026-04-01",
     "dateModified": "2026-04-01",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.tausigpi.com/briefing-evidence-preservation.html"
+      "@id": "https://tausigpi.com/briefing-evidence-preservation.html"
     },
     "keywords": "digital evidence preservation, ESI preservation, litigation hold, FRCP 37e, spoliation"
   }
@@ -63,11 +64,37 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Briefings",
+            "item": "https://tausigpi.com/briefings.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Evidence Preservation"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -86,7 +113,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -136,16 +163,23 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="briefings.html">Briefings</a></li>
+        <li>Evidence Preservation</li>
+      </ol>
+    </nav>
     <section class="section">
       <div class="container container--narrow">
-        <a href="briefings.html" style="display: inline-flex; align-items: center; gap: 0.4em; font-size: var(--text-sm); color: var(--color-accent); text-decoration: none; margin-bottom: var(--space-6);">
+        <a href="briefings.html" class="article-back">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Back to Briefings
         </a>
 
         <span class="section-label">Digital Forensics</span>
         <h1 style="font-family: var(--font-display); font-size: var(--text-3xl); line-height: 1.2; margin-bottom: var(--space-3);">Digital Evidence Preservation: A Practical Framework</h1>
-        <p style="font-size: var(--text-sm); color: var(--color-text-faint); margin-bottom: var(--space-10);">By Ian Tausig, CSMIE | January 2026</p>
+        <p class="article-dateline">By Ian Tausig, CSMIE | January 2026 | <span class="reading-time">6 min read</span></p>
 
         <div class="legal-content">
 
@@ -227,8 +261,8 @@
         </div>
 
         <!-- CTA -->
-        <div style="margin-top: var(--space-12); padding: var(--space-8); background: var(--color-surface); border-left: 3px solid var(--color-accent);">
-          <p style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: var(--space-2);">Tausig &amp; Associates</p>
+        <div class="callout">
+          <p class="briefing-label">Tausig &amp; Associates</p>
           <p style="font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--space-3);">Preservation that holds up in court.</p>
           <p style="color: var(--color-text-muted); margin-bottom: var(--space-5);">Our digital forensics practice conducts forensically sound ESI collection and preservation for litigation teams throughout California. If you are facing a case where digital evidence is at stake, the time to call is now — not after the data is gone.</p>
           <a href="digital-forensics.html" class="btn btn--primary">Digital Forensics Services</a>
@@ -238,6 +272,22 @@
     </section>
   </main>
 
+
+    <section class="section bg-surface">
+      <div class="container container--default">
+        <h2 class="section-title mb-8">Related Briefings</h2>
+        <div class="related-articles">
+          <a href="briefing-daubert-digital.html" class="related-article">
+            <div class="related-article__title">Meeting Daubert Standards for Digital Evidence</div>
+            <p class="related-article__excerpt">How to ensure your digital evidence meets the reliability threshold courts require.</p>
+          </a>
+          <a href="briefing-osint-methodology.html" class="related-article">
+            <div class="related-article__title">OSINT Methodology: Beyond Screenshots</div>
+            <p class="related-article__excerpt">The difference between admissible intelligence and wasted effort comes down to methodology.</p>
+          </a>
+        </div>
+      </div>
+    </section>
   <section class="cta-banner section">
     <div class="container">
       <h2 class="section-title">Engage With Us</h2>
@@ -291,6 +341,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

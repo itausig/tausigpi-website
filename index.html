@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tausig & Associates | Private Investigators</title>
   <meta name="description" content="Tausig & Associates offers expert private investigator services for complex legal, corporate, and family matters, delivering the factual clarity you need to act with confidence.">
-  <link rel="canonical" href="https://www.tausigpi.com/">
+  <link rel="canonical" href="https://tausigpi.com/">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tausig & Associates | Private Investigators">
   <meta property="og:description" content="Tausig & Associates offers expert private investigator services for complex legal, corporate, and family matters, delivering the factual clarity you need to act with confidence.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tausigpi.com/">
+  <meta property="og:url" content="https://tausigpi.com/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -36,11 +37,12 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -59,7 +61,7 @@
         <a href="index.html" class="nav-link nav-link--active">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -131,11 +133,11 @@
             <h2 class="section-title" id="approach-heading">Data is everywhere. Understanding is rare.</h2>
           </div>
           <div>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">Here's what we've learned after years in this business: data is everywhere, but understanding? That's rare.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">Anyone can pull numbers and generate reports. But making sense of what those numbers actually mean for your specific situation? That takes a different kind of thinking.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">We're the people you call when you need more than spreadsheets and summaries. When you need someone to look at your situation with fresh eyes, ask the right questions, and figure out what's really going on. We don't just find information—we find the information that matters, then help you understand exactly what to do with it.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">Our approach is thorough, our methods are sound, and our conclusions are ones you can actually act on. No fluff, no filler, just the clarity you need to move forward with confidence.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-6);">And everything we do stays between us. Always.</p>
+            <p class="section-subtitle mb-4">Here's what we've learned after years in this business: data is everywhere, but understanding? That's rare.</p>
+            <p class="section-subtitle mb-4">Anyone can pull numbers and generate reports. But making sense of what those numbers actually mean for your specific situation? That takes a different kind of thinking.</p>
+            <p class="section-subtitle mb-4">We're the people you call when you need more than spreadsheets and summaries. When you need someone to look at your situation with fresh eyes, ask the right questions, and figure out what's really going on. We don't just find information—we find the information that matters, then help you understand exactly what to do with it.</p>
+            <p class="section-subtitle mb-4">Our approach is thorough, our methods are sound, and our conclusions are ones you can actually act on. No fluff, no filler, just the clarity you need to move forward with confidence.</p>
+            <p class="section-subtitle mb-6">And everything we do stays between us. Always.</p>
             <a href="contact.html" class="btn btn--ghost">Let's Talk →</a>
           </div>
         </div>
@@ -143,7 +145,7 @@
     </section>
 
     <section class="highlight-section section" aria-labelledby="value-heading">
-      <div class="container" style="text-align: center;">
+      <div class="container text-center">
         <h2 class="section-title" id="value-heading" style="max-width: 700px; margin-inline: auto;">Delivering the Evidence and Insight You Need to Prevail.</h2>
         <p class="section-subtitle" style="margin-inline: auto; margin-top: var(--space-4); margin-bottom: var(--space-6);">The truth, the whole truth, and what to do about it.</p>
         <a href="contact.html" class="btn btn--primary">Let's Talk</a>
@@ -154,7 +156,7 @@
       <div class="container">
         <span class="section-label">What We Do</span>
         <h2 class="section-title" id="disciplines-heading">Our Core Disciplines</h2>
-        <div class="card-grid card-grid--3" style="margin-top: var(--space-8);">
+        <div class="card-grid card-grid--3 mt-8">
           <article class="card">
             <div class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
             <h3 class="card__title">Digital Investigations &amp; OSINT</h3>
@@ -200,7 +202,7 @@
     "@type": "ProfessionalService",
     "name": "Tausig & Associates",
     "description": "Private investigation, digital forensics, OSINT, and litigation support serving attorneys and corporations in Sacramento and throughout California.",
-    "url": "https://www.tausigpi.com",
+    "url": "https://tausigpi.com",
     "telephone": "+1-916-345-4430",
     "address": {
       "@type": "PostalAddress",
@@ -274,6 +276,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

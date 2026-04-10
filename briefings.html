@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Briefings | Tausig & Associates</title>
   <meta name="description" content="Analysis and insight on digital evidence, OSINT methodology, AI detection, and investigative best practices from Tausig & Associates.">
-  <link rel="canonical" href="https://www.tausigpi.com/briefings.html">
+  <link rel="canonical" href="https://tausigpi.com/briefings.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Briefings | Tausig & Associates">
   <meta property="og:description" content="Analysis and insight on digital evidence, OSINT methodology, AI detection, and investigative best practices from Tausig & Associates.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tausigpi.com/briefings.html">
+  <meta property="og:url" content="https://tausigpi.com/briefings.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -36,11 +37,31 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Briefings"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -59,7 +80,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -109,6 +130,12 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li>Briefings</li>
+      </ol>
+    </nav>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
@@ -126,42 +153,51 @@
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-ai-evidence.html">The Rise of AI-Generated Evidence in Litigation</a></h3>
           <p class="article-listing__excerpt">Courts are increasingly confronting deepfakes and synthetic documents. Here's what legal teams need to know right now.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; April 2026</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; April 2026 &middot; <span class="reading-time">7 min read</span></p>
         </div>
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-daubert-digital.html">Meeting Daubert Standards for Digital Evidence</a></h3>
           <p class="article-listing__excerpt">Digital forensic evidence faces unique challenges under Daubert. How to ensure your digital evidence meets the reliability threshold courts require.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; March 2026</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; March 2026 &middot; <span class="reading-time">7 min read</span></p>
         </div>
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-osint-methodology.html">OSINT Methodology: Beyond Screenshots</a></h3>
           <p class="article-listing__excerpt">Pulling screenshots isn't an investigation. The difference between admissible intelligence and wasted effort comes down to methodology.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; February 2026</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; February 2026 &middot; <span class="reading-time">7 min read</span></p>
         </div>
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-evidence-preservation.html">Digital Evidence Preservation: A Practical Framework</a></h3>
           <p class="article-listing__excerpt">The window to preserve critical digital evidence is often narrower than attorneys realize. A practical framework for getting it right the first time.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; January 2026</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; January 2026 &middot; <span class="reading-time">6 min read</span></p>
         </div>
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-background-investigations.html">The Evolution of Background Investigations</a></h3>
           <p class="article-listing__excerpt">Background investigations have evolved significantly. What used to be a simple records check now requires a fundamentally different approach.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; December 2025</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; December 2025 &middot; <span class="reading-time">7 min read</span></p>
         </div>
         <div class="article-listing">
           <h3 class="article-listing__title"><a href="briefing-outside-investigators.html">When to Engage Outside Investigators</a></h3>
           <p class="article-listing__excerpt">Internal investigations handled by internal teams face inherent credibility challenges. Knowing when to engage an outside firm can make the difference.</p>
-          <p class="article-listing__meta">By Ian Tausig &middot; October 2025</p>
+          <p class="article-listing__meta">By Ian Tausig &middot; October 2025 &middot; <span class="reading-time">7 min read</span></p>
         </div>
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-surface);">
-      <div class="container" style="text-align: center;">
+    <section class="section bg-surface">
+      <div class="container text-center">
         <p style="font-size: var(--text-base); color: var(--color-text-muted); margin-bottom: var(--space-2);">Prefer to call? Reach us at <a href="tel:+19163454430" style="color: var(--color-accent); text-decoration: none;">916-345-4430</a>.</p>
         <p style="font-size: var(--text-sm); color: var(--color-text-faint);">Every matter is different. Tell us what you're facing and we'll respond within one business day.</p>
       </div>
     </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Briefings",
+    "description": "Analysis and insight on digital evidence, OSINT methodology, AI detection, and investigative best practices.",
+    "url": "https://tausigpi.com/briefings.html"
+}
+  </script>
   </main>
 
   <section class="cta-banner section">
@@ -217,6 +253,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

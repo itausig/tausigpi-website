@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tausig &amp; Associates — Briefings</title>
+    <link>https://tausigpi.com/briefings.html</link>
+    <description>Analysis and insight on digital evidence, OSINT methodology, AI detection, and investigative best practices from Tausig &amp; Associates.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Apr 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://tausigpi.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>The Rise of AI-Generated Evidence in Litigation</title>
+      <link>https://tausigpi.com/briefing-ai-evidence.html</link>
+      <guid>https://tausigpi.com/briefing-ai-evidence.html</guid>
+      <pubDate>Mon, 07 Apr 2026 00:00:00 GMT</pubDate>
+      <description>AI-generated evidence in litigation is reshaping authentication standards. What California attorneys need to know about deepfakes, FRE 901, and Daubert challenges.</description>
+    </item>
+
+    <item>
+      <title>Meeting Daubert Standards for Digital Evidence</title>
+      <link>https://tausigpi.com/briefing-daubert-digital.html</link>
+      <guid>https://tausigpi.com/briefing-daubert-digital.html</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Digital forensic evidence faces unique challenges under Daubert. How to ensure your digital evidence meets the reliability threshold courts require.</description>
+    </item>
+
+    <item>
+      <title>OSINT Methodology: Beyond Screenshots</title>
+      <link>https://tausigpi.com/briefing-osint-methodology.html</link>
+      <guid>https://tausigpi.com/briefing-osint-methodology.html</guid>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Pulling screenshots isn't an investigation. The difference between admissible intelligence and wasted effort comes down to methodology.</description>
+    </item>
+
+    <item>
+      <title>Digital Evidence Preservation: A Practical Framework</title>
+      <link>https://tausigpi.com/briefing-evidence-preservation.html</link>
+      <guid>https://tausigpi.com/briefing-evidence-preservation.html</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <description>The window to preserve critical digital evidence is often narrower than attorneys realize. A practical framework for getting it right the first time.</description>
+    </item>
+
+    <item>
+      <title>The Evolution of Background Investigations</title>
+      <link>https://tausigpi.com/briefing-background-investigations.html</link>
+      <guid>https://tausigpi.com/briefing-background-investigations.html</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+      <description>Background investigations have evolved significantly. What used to be a simple records check now requires a fundamentally different approach.</description>
+    </item>
+
+    <item>
+      <title>When to Engage Outside Investigators</title>
+      <link>https://tausigpi.com/briefing-outside-investigators.html</link>
+      <guid>https://tausigpi.com/briefing-outside-investigators.html</guid>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 GMT</pubDate>
+      <description>Internal investigations handled by internal teams face inherent credibility challenges. Knowing when to engage an outside firm can make the difference.</description>
+    </item>
+  </channel>
+</rss>

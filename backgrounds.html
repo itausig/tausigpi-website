@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tausig & Associates | Background Investigations</title>
   <meta name="description" content="For life's most important decisions. Our comprehensive background checks provide the full picture for both personal and professional peace of mind.">
-  <link rel="canonical" href="https://www.tausigpi.com/backgrounds.html">
+  <link rel="canonical" href="https://tausigpi.com/backgrounds.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tausig & Associates | Background Investigations">
   <meta property="og:description" content="For life's most important decisions. Our comprehensive background checks provide the full picture for both personal and professional peace of mind.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tausigpi.com/backgrounds.html">
+  <meta property="og:url" content="https://tausigpi.com/backgrounds.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -36,11 +37,36 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Background Investigations"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -59,7 +85,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -109,6 +135,13 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li>Services</li>
+        <li>Background Investigations</li>
+      </ol>
+    </nav>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
@@ -127,19 +160,19 @@
             <h2 class="section-title" id="body-heading">Background Investigations</h2>
           </div>
           <div>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">Every major decision comes down to people. Whether you're hiring a key executive, entering a strategic partnership, or making a significant investment, success depends on the character and integrity of who you're dealing with. The problem is that standard background checks barely scratch the surface. Automated database searches miss the nuanced risks that can sink these ventures before they start.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">We take a fundamentally different approach. Instead of relying on what databases happen to contain, we conduct investigative due diligence that builds a complete picture of who someone really is. We synthesize public records with human intelligence and deep digital analysis to verify credentials, examine histories, and identify the undisclosed liabilities or conflicts of interest that could become problems later.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">The result is comprehensive intelligence that goes far beyond what typical vetting reveals. We uncover the relationships, financial entanglements, and past decisions that matter most when you're about to trust someone with significant responsibility or resources. This level of insight lets you make critical decisions with genuine confidence, knowing you understand both the opportunities and the risks involved.</p>
+            <p class="section-subtitle mb-4">Every major decision comes down to people. Whether you're hiring a key executive, entering a strategic partnership, or making a significant investment, success depends on the character and integrity of who you're dealing with. The problem is that standard background checks barely scratch the surface. Automated database searches miss the nuanced risks that can sink these ventures before they start.</p>
+            <p class="section-subtitle mb-4">We take a fundamentally different approach. Instead of relying on what databases happen to contain, we conduct investigative due diligence that builds a complete picture of who someone really is. We synthesize public records with human intelligence and deep digital analysis to verify credentials, examine histories, and identify the undisclosed liabilities or conflicts of interest that could become problems later.</p>
+            <p class="section-subtitle mb-4">The result is comprehensive intelligence that goes far beyond what typical vetting reveals. We uncover the relationships, financial entanglements, and past decisions that matter most when you're about to trust someone with significant responsibility or resources. This level of insight lets you make critical decisions with genuine confidence, knowing you understand both the opportunities and the risks involved.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-surface);" aria-labelledby="capabilities-heading">
+    <section class="section bg-surface" aria-labelledby="capabilities-heading">
       <div class="container">
         <span class="section-label">What We Do</span>
         <h2 class="section-title" id="capabilities-heading">Our Capabilities</h2>
-        <div class="capabilities-list" style="margin-top: var(--space-8);">
+        <div class="capabilities-list mt-8">
           <div class="capability">
             <h3 class="capability__title">Executive Vetting</h3>
             <p class="capability__text">Deep screening for C-suite, board, and other critical appointments where character and track record matter most. We examine not just what candidates claim, but how they've actually performed under pressure, how they've treated people along the way, and whether their reputation matches their resume.</p>
@@ -180,6 +213,25 @@
       </div>
     </div>
   </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Background Investigations",
+    "serviceType": "Background Investigation",
+    "description": "Thorough background research for executive hiring, partnerships, investments, and personal matters.",
+    "url": "https://tausigpi.com/backgrounds.html",
+    "provider": {
+        "@type": "Organization",
+        "name": "Tausig & Associates",
+        "url": "https://tausigpi.com"
+    },
+    "areaServed": {
+        "@type": "State",
+        "name": "California"
+    }
+}
+  </script>
   </main>
 
   <section class="cta-banner section">
@@ -235,6 +287,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

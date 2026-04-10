@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meeting Daubert Standards for Digital Evidence | Tausig &amp; Associates</title>
   <meta name="description" content="How the Daubert standard applies to digital forensic evidence. Expert qualification, methodology documentation, and surviving admissibility challenges in California.">
-  <link rel="canonical" href="https://www.tausigpi.com/briefing-daubert-digital.html">
+  <link rel="canonical" href="https://tausigpi.com/briefing-daubert-digital.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Meeting Daubert Standards for Digital Evidence | Tausig &amp; Associates">
   <meta property="og:description" content="How the Daubert standard applies to digital forensic evidence. Expert qualification, methodology documentation, and surviving admissibility challenges in California.">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://www.tausigpi.com/briefing-daubert-digital.html">
+  <meta property="og:url" content="https://tausigpi.com/briefing-daubert-digital.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -41,13 +42,13 @@
     "publisher": {
       "@type": "Organization",
       "name": "Tausig &amp; Associates",
-      "url": "https://www.tausigpi.com"
+      "url": "https://tausigpi.com"
     },
     "datePublished": "2026-04-01",
     "dateModified": "2026-04-01",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.tausigpi.com/briefing-daubert-digital.html"
+      "@id": "https://tausigpi.com/briefing-daubert-digital.html"
     },
     "keywords": "Daubert standard digital evidence, FRE 702, Kelly-Frye California, digital forensics expert witness, admissibility"
   }
@@ -63,11 +64,37 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Briefings",
+            "item": "https://tausigpi.com/briefings.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Daubert Standards"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -86,7 +113,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -136,16 +163,23 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="briefings.html">Briefings</a></li>
+        <li>Daubert Standards</li>
+      </ol>
+    </nav>
     <section class="section">
       <div class="container container--narrow">
-        <a href="briefings.html" style="display: inline-flex; align-items: center; gap: 0.4em; font-size: var(--text-sm); color: var(--color-accent); text-decoration: none; margin-bottom: var(--space-6);">
+        <a href="briefings.html" class="article-back">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
           Back to Briefings
         </a>
 
         <span class="section-label">Expert Witness</span>
         <h1 style="font-family: var(--font-display); font-size: var(--text-3xl); line-height: 1.2; margin-bottom: var(--space-3);">Meeting Daubert Standards for Digital Evidence</h1>
-        <p style="font-size: var(--text-sm); color: var(--color-text-faint); margin-bottom: var(--space-10);">By Ian Tausig, CSMIE | March 2026</p>
+        <p class="article-dateline">By Ian Tausig, CSMIE | March 2026 | <span class="reading-time">7 min read</span></p>
 
         <div class="legal-content">
 
@@ -227,8 +261,8 @@
         </div>
 
         <!-- CTA -->
-        <div style="margin-top: var(--space-12); padding: var(--space-8); background: var(--color-surface); border-left: 3px solid var(--color-accent);">
-          <p style="font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: var(--space-2);">Tausig &amp; Associates</p>
+        <div class="callout">
+          <p class="briefing-label">Tausig &amp; Associates</p>
           <p style="font-family: var(--font-display); font-size: var(--text-xl); margin-bottom: var(--space-3);">Court-qualified. Methodology-first.</p>
           <p style="color: var(--color-text-muted); margin-bottom: var(--space-5);">Ian Tausig has been qualified as an expert witness in digital evidence and social media investigations in California courts. Our forensic work is built around the documentation standards that survive <em>Daubert</em> and <em>Kelly-Frye</em> challenges. If digital evidence is central to your case, engage expert support before the evidence is collected, not after.</p>
           <a href="expert-witness.html" class="btn btn--primary">Expert Witness Services</a>
@@ -238,6 +272,22 @@
     </section>
   </main>
 
+
+    <section class="section bg-surface">
+      <div class="container container--default">
+        <h2 class="section-title mb-8">Related Briefings</h2>
+        <div class="related-articles">
+          <a href="briefing-ai-evidence.html" class="related-article">
+            <div class="related-article__title">The Rise of AI-Generated Evidence in Litigation</div>
+            <p class="related-article__excerpt">Courts are increasingly confronting deepfakes and synthetic documents.</p>
+          </a>
+          <a href="briefing-osint-methodology.html" class="related-article">
+            <div class="related-article__title">OSINT Methodology: Beyond Screenshots</div>
+            <p class="related-article__excerpt">The difference between admissible intelligence and wasted effort comes down to methodology.</p>
+          </a>
+        </div>
+      </div>
+    </section>
   <section class="cta-banner section">
     <div class="container">
       <h2 class="section-title">Engage With Us</h2>
@@ -291,6 +341,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

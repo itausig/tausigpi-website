@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tausig & Associates | Digital Investigations & OSINT</title>
   <meta name="description" content="Uncover the full story with our expert digital investigation and OSINT services. We analyze digital footprints and public records to deliver actionable reports.">
-  <link rel="canonical" href="https://www.tausigpi.com/osint.html">
+  <link rel="canonical" href="https://tausigpi.com/osint.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tausig & Associates | Digital Investigations & OSINT">
   <meta property="og:description" content="Uncover the full story with our expert digital investigation and OSINT services. We analyze digital footprints and public records to deliver actionable reports.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tausigpi.com/osint.html">
+  <meta property="og:url" content="https://tausigpi.com/osint.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -36,11 +37,36 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Digital Investigations & OSINT"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -59,7 +85,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -109,6 +135,13 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li>Services</li>
+        <li>Digital Investigations & OSINT</li>
+      </ol>
+    </nav>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
@@ -127,20 +160,20 @@
             <h2 class="section-title" id="body-heading">Digital Investigations &amp; OSINT</h2>
           </div>
           <div>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">People think they can disappear online, but the internet never forgets anything. Every click, every post, every transaction leaves a trail, and we know exactly how to follow it.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">We're not talking about basic Google searches here. We dig into the layers most people don't even know exist: archived social media posts that were "deleted" years ago, obscure public records databases, corporate filings buried in government sites, news mentions from small-town papers, court documents that tell the real story.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">The trick isn't just knowing these sources exist—it's knowing how to connect them, how to verify what's real versus what's been scrubbed or altered, and how to build a complete picture from scattered pieces. We've spent years learning which databases actually get updated, which archives are reliable, and which search techniques will find what others miss.</p>
-            <p class="section-subtitle" style="margin-bottom: var(--space-4);">By the time we're done, you'll know more about your subject than they probably remember about themselves.</p>
+            <p class="section-subtitle mb-4">People think they can disappear online, but the internet never forgets anything. Every click, every post, every transaction leaves a trail, and we know exactly how to follow it.</p>
+            <p class="section-subtitle mb-4">We're not talking about basic Google searches here. We dig into the layers most people don't even know exist: archived social media posts that were "deleted" years ago, obscure public records databases, corporate filings buried in government sites, news mentions from small-town papers, court documents that tell the real story.</p>
+            <p class="section-subtitle mb-4">The trick isn't just knowing these sources exist—it's knowing how to connect them, how to verify what's real versus what's been scrubbed or altered, and how to build a complete picture from scattered pieces. We've spent years learning which databases actually get updated, which archives are reliable, and which search techniques will find what others miss.</p>
+            <p class="section-subtitle mb-4">By the time we're done, you'll know more about your subject than they probably remember about themselves.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-surface);" aria-labelledby="capabilities-heading">
+    <section class="section bg-surface" aria-labelledby="capabilities-heading">
       <div class="container">
         <span class="section-label">What We Do</span>
         <h2 class="section-title" id="capabilities-heading">Our Capabilities</h2>
-        <div class="capabilities-list" style="margin-top: var(--space-8);">
+        <div class="capabilities-list mt-8">
           <div class="capability">
             <h3 class="capability__title">Advanced Social Media Intelligence (SOCMINT)</h3>
             <p class="capability__text">Involves more than scrolling through someone's Facebook posts. We conduct deep analysis across social networks to build comprehensive subject profiles, map out their networks of associates, and identify behavioral patterns that reveal how they operate. It's detective work for the digital age.</p>
@@ -181,6 +214,25 @@
       </div>
     </div>
   </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Digital Investigations & OSINT",
+    "serviceType": "Open Source Intelligence Investigation",
+    "description": "Social media intelligence, public records research, corporate filings analysis, and digital footprint investigations.",
+    "url": "https://tausigpi.com/osint.html",
+    "provider": {
+        "@type": "Organization",
+        "name": "Tausig & Associates",
+        "url": "https://tausigpi.com"
+    },
+    "areaServed": {
+        "@type": "State",
+        "name": "California"
+    }
+}
+  </script>
   </main>
 
   <section class="cta-banner section">
@@ -236,6 +288,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

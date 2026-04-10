@@ -2,6 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -13,13 +14,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expert Witness — Ian A. Tausig, CSMIE | Tausig & Associates</title>
   <meta name="description" content="Court-qualified expert witness in social media intelligence, digital forensics, OSINT methodology, and AI-generated content detection. Available for retention nationwide.">
-  <link rel="canonical" href="https://www.tausigpi.com/expert-witness.html">
+  <link rel="canonical" href="https://tausigpi.com/expert-witness.html">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Expert Witness — Ian A. Tausig, CSMIE | Tausig & Associates">
   <meta property="og:description" content="Court-qualified expert witness in social media intelligence, digital forensics, OSINT methodology, and AI-generated content detection. Available for retention nationwide.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.tausigpi.com/expert-witness.html">
+  <meta property="og:url" content="https://tausigpi.com/expert-witness.html">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
@@ -36,11 +37,31 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Expert Witness"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -59,7 +80,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <button class="nav-link" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -109,6 +130,12 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li>Expert Witness</li>
+      </ol>
+    </nav>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
@@ -141,7 +168,7 @@
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-surface);" aria-labelledby="testimony-heading">
+    <section class="section bg-surface" aria-labelledby="testimony-heading">
       <div class="container">
         <div class="two-col">
           <div>
@@ -170,7 +197,7 @@
             <h2 class="section-title" id="approach-heading">Approach to Expert Testimony</h2>
           </div>
           <div>
-            <p class="section-subtitle" style="margin-bottom: var(--space-6);">Expert testimony is only as credible as the methodology behind it. Every engagement follows a rigorous, documented process designed to withstand Daubert and Frye challenges, with evidence handling that satisfies Federal Rule of Evidence 902(14) certification requirements for self-authenticating electronic evidence.</p>
+            <p class="section-subtitle mb-6">Expert testimony is only as credible as the methodology behind it. Every engagement follows a rigorous, documented process designed to withstand Daubert and Frye challenges, with evidence handling that satisfies Federal Rule of Evidence 902(14) certification requirements for self-authenticating electronic evidence.</p>
             <ul class="quals-list" role="list">
               <li>Evidence-grade documentation — every step recorded, timestamped, and reproducible</li>
               <li>Methodology built on peer-reviewed frameworks and accepted industry standards</li>
@@ -182,7 +209,7 @@
       </div>
     </section>
 
-    <section class="section" style="background: var(--color-surface);" aria-labelledby="speaking-heading">
+    <section class="section bg-surface" aria-labelledby="speaking-heading">
       <div class="container">
         <div class="two-col">
           <div>
@@ -197,12 +224,31 @@
     </section>
 
     <section class="section" aria-labelledby="retain-heading">
-      <div class="container" style="text-align: center;">
+      <div class="container text-center">
         <h2 class="section-title" id="retain-heading">Retain Ian Tausig as an Expert Witness</h2>
         <p class="section-subtitle" style="margin-inline: auto; margin-bottom: var(--space-6);">Tell us about your case and we'll schedule a confidential consultation.</p>
         <a href="contact.html" class="btn btn--primary">Get in Touch</a>
       </div>
     </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Expert Witness Services",
+    "serviceType": "Expert Witness Testimony",
+    "description": "Court-qualified expert witness specializing in social media investigative techniques and digital evidence authentication.",
+    "url": "https://tausigpi.com/expert-witness.html",
+    "provider": {
+        "@type": "Organization",
+        "name": "Tausig & Associates",
+        "url": "https://tausigpi.com"
+    },
+    "areaServed": {
+        "@type": "State",
+        "name": "California"
+    }
+}
+  </script>
   </main>
 
   <section class="cta-banner section">
@@ -258,6 +304,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>
