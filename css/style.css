@@ -3,9 +3,6 @@
    Dark-default palette: navy/slate + gold accent
    ============================================================ */
 
-/* --- FONTS --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
-
 :root {
   --font-display: 'DM Serif Display', Georgia, serif;
   --font-body: 'Inter', 'Helvetica Neue', sans-serif;
@@ -131,6 +128,77 @@
 }
 .section--sm {
   padding-block: clamp(var(--space-8), 5vw, var(--space-16));
+}
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-5 { margin-bottom: var(--space-5); }
+.mb-6 { margin-bottom: var(--space-6); }
+.mb-8 { margin-bottom: var(--space-8); }
+.mb-10 { margin-bottom: var(--space-10); }
+.mt-0 { margin-top: 0; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-8 { margin-top: var(--space-8); }
+.mt-12 { margin-top: var(--space-12); }
+.text-center { text-align: center; }
+.bg-surface { background: var(--color-surface); }
+.max-w-narrow { max-width: 700px; margin-inline: auto; }
+.ml-3 { margin-left: var(--space-3); }
+
+/* Contact info labels */
+.info-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-2);
+}
+
+/* Article back link */
+.article-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  text-decoration: none;
+  margin-bottom: var(--space-6);
+}
+
+/* Briefing article date line */
+.article-dateline {
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-10);
+}
+
+/* Callout / pull-quote box */
+.callout {
+  margin-top: var(--space-12);
+  padding: var(--space-8);
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+}
+
+/* Briefing section label */
+.briefing-label {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+/* Form status message */
+#form-status {
+  margin-top: var(--space-4);
+  font-size: var(--text-sm);
+  min-height: 1.5em;
 }
 
 /* ============================================================
@@ -1145,5 +1213,76 @@
   }
   .card {
     padding: var(--space-6);
+  }
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .header,
+  .footer,
+  .mobile-nav,
+  .mobile-menu-btn,
+  .theme-toggle,
+  .cta-banner,
+  .hero__ctas,
+  .hero__bg,
+  .btn,
+  .nav-cta {
+    display: none !important;
+  }
+
+  .hero {
+    min-height: auto !important;
+    padding: 1em 0 !important;
+  }
+
+  .section {
+    padding-block: 1em !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    color: #555 !important;
+  }
+
+  a[href^="#"]::after,
+  a[href^="tel:"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+
+  img, table, figure {
+    page-break-inside: avoid;
+  }
+
+  .callout {
+    border-left: 2px solid #000 !important;
+    padding: 0.5em 1em !important;
   }
 }
