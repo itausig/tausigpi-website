@@ -2,7 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <script>(function(){var t=localStorage.getItem("tausig-theme");if(t)document.documentElement.setAttribute("data-theme",t);})()</script>
+  <script>(function(){var t=localStorage.getItem("tausig-theme")||(window.matchMedia&&window.matchMedia("(prefers-color-scheme:light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t);})()</script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E3TQ9V6DF4"></script>
   <script>
@@ -37,11 +37,36 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://tausigpi.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Digital Investigations & OSINT"
+        }
+    ]
+}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Tausig &amp; Associates Briefings" href="/feed.xml">
 </head>
 <body>
   <a href="#main-content" class="sr-only">Skip to main content</a>
@@ -60,7 +85,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="attorneys.html" class="nav-link">For Attorneys</a>
         <div class="nav-dropdown">
-          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></a>
+          <a href="#" class="nav-link nav-link--active" aria-haspopup="true" aria-expanded="false">Services <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5l3 3 3-3"/></svg></button>
           <div class="nav-dropdown__menu" role="menu">
             <a href="osint.html" role="menuitem">Digital Investigations &amp; OSINT</a>
             <a href="legal.html" role="menuitem">Legal Investigations</a>
@@ -110,6 +135,13 @@
   </header>
 
   <main id="main-content">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <ol class="breadcrumbs__list">
+        <li><a href="index.html">Home</a></li>
+        <li>Services</li>
+        <li>Digital Investigations & OSINT</li>
+      </ol>
+    </nav>
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="container">
@@ -182,6 +214,25 @@
       </div>
     </div>
   </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Digital Investigations & OSINT",
+    "serviceType": "Open Source Intelligence Investigation",
+    "description": "Social media intelligence, public records research, corporate filings analysis, and digital footprint investigations.",
+    "url": "https://tausigpi.com/osint.html",
+    "provider": {
+        "@type": "Organization",
+        "name": "Tausig & Associates",
+        "url": "https://tausigpi.com"
+    },
+    "areaServed": {
+        "@type": "State",
+        "name": "California"
+    }
+}
+  </script>
   </main>
 
   <section class="cta-banner section">
@@ -237,6 +288,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js" defer></script>
 </body>

@@ -1,4 +1,4 @@
-/* Tausig & Associates — Minimal JS */
+/* Tausig & Associates — Site JS */
 
 (function() {
   'use strict';
@@ -6,7 +6,8 @@
   /* --- Theme Toggle --- */
   var themeToggle = document.querySelector('[data-theme-toggle]');
   var root = document.documentElement;
-  var currentTheme = localStorage.getItem('tausig-theme') || 'dark';
+  var stored = localStorage.getItem('tausig-theme');
+  var currentTheme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
   root.setAttribute('data-theme', currentTheme);
   updateToggleIcon();
 
@@ -78,24 +79,37 @@
         closeMobileMenu();
       }
     });
+
+    /* Auto-close mobile menu on resize past desktop breakpoint */
+    window.addEventListener('resize', function() {
+      if (window.innerWidth >= 1024 && mobileNav.classList.contains('is-open')) {
+        closeMobileMenu();
+      }
+    });
   }
 
   /* --- Services Dropdown Keyboard Navigation --- */
   var dropdown = document.querySelector('.nav-dropdown');
   if (dropdown) {
-    var trigger = dropdown.querySelector('.nav-link');
+    var trigger = dropdown.querySelector('button.nav-link');
     var menu = dropdown.querySelector('.nav-dropdown__menu');
     var menuItems = menu ? menu.querySelectorAll('a[role="menuitem"]') : [];
 
     if (trigger && menu && menuItems.length > 0) {
-      trigger.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
+      trigger.addEventListener('click', function(e) {
+        e.preventDefault();
+        var isOpen = menu.style.visibility === 'visible';
+        if (isOpen) {
+          closeDropdown();
+        } else {
           menu.style.opacity = '1';
           menu.style.visibility = 'visible';
           trigger.setAttribute('aria-expanded', 'true');
           menuItems[0].focus();
         }
+      });
+
+      trigger.addEventListener('keydown', function(e) {
         if (e.key === 'ArrowDown') {
           e.preventDefault();
           menu.style.opacity = '1';
@@ -150,6 +164,43 @@
         header.classList.remove('header--scrolled');
       }
     }, { passive: true });
+  }
+
+  /* --- Back to Top Button --- */
+  var backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('is-visible');
+      } else {
+        backToTop.classList.remove('is-visible');
+      }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  /* --- Scroll-triggered Reveal Animations --- */
+  var revealElements = document.querySelectorAll('.card, .case-card, .capability, .practice-card, .value-item, .article-listing');
+  if (revealElements.length > 0 && 'IntersectionObserver' in window) {
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!prefersReduced) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      revealElements.forEach(function(el) {
+        el.classList.add('reveal');
+        observer.observe(el);
+      });
+    }
   }
 
   /* --- Contact Form (Formspree) --- */

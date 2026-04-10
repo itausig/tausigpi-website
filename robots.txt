@@ -3,3 +3,4 @@ Allow: /
 Disallow: /404.html
 
 Sitemap: https://tausigpi.com/sitemap.xml
+RSS: https://tausigpi.com/feed.xml
