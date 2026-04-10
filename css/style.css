@@ -194,11 +194,48 @@
   margin-bottom: var(--space-2);
 }
 
-/* Form status message */
-#form-status {
-  margin-top: var(--space-4);
+/* Form success / error messages (Formspree) */
+[data-fs-success] {
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
   font-size: var(--text-sm);
-  min-height: 1.5em;
+  color: #2d6a4f;
+  background: rgba(45, 106, 79, 0.1);
+  border: 1px solid rgba(45, 106, 79, 0.25);
+  border-radius: var(--radius-md);
+}
+[data-fs-success]:empty { display: none; }
+[data-theme='dark'] [data-fs-success] {
+  color: #95d5b2;
+  background: rgba(149, 213, 178, 0.08);
+  border-color: rgba(149, 213, 178, 0.2);
+}
+
+[data-fs-error]:not(span) {
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  font-size: var(--text-sm);
+  color: #c1121f;
+  background: rgba(193, 18, 31, 0.06);
+  border: 1px solid rgba(193, 18, 31, 0.2);
+  border-radius: var(--radius-md);
+}
+[data-fs-error]:not(span):empty { display: none; }
+[data-theme='dark'] [data-fs-error]:not(span) {
+  color: #f4978e;
+  background: rgba(244, 151, 142, 0.08);
+  border-color: rgba(244, 151, 142, 0.15);
+}
+
+.form-field-error {
+  display: block;
+  font-size: var(--text-xs);
+  color: #c1121f;
+  margin-top: var(--space-1);
+}
+.form-field-error:empty { display: none; }
+[data-theme='dark'] .form-field-error {
+  color: #f4978e;
 }
 
 /* ============================================================

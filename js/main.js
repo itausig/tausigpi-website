@@ -203,45 +203,5 @@
     }
   }
 
-  /* --- Contact Form (Formspree) --- */
-  var contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    var formStatus = document.getElementById('form-status');
-
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var btn = contactForm.querySelector('button[type="submit"]');
-      var originalText = btn.textContent;
-      btn.textContent = 'Sending\u2026';
-      btn.disabled = true;
-      btn.style.opacity = '0.6';
-      if (formStatus) formStatus.textContent = '';
-
-      var data = new FormData(contactForm);
-
-      fetch(contactForm.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      }).then(function(response) {
-        if (response.ok) {
-          btn.textContent = 'Message Sent';
-          if (formStatus) formStatus.textContent = 'Your message has been sent. We will respond within one business day.';
-          contactForm.reset();
-          setTimeout(function() {
-            btn.textContent = originalText;
-            btn.disabled = false;
-            btn.style.opacity = '1';
-          }, 4000);
-        } else {
-          throw new Error('Form submission failed');
-        }
-      }).catch(function() {
-        btn.textContent = originalText;
-        btn.disabled = false;
-        btn.style.opacity = '1';
-        if (formStatus) formStatus.textContent = 'There was a problem sending your message. Please try again or call us at 916-345-4430.';
-      });
-    });
-  }
+  /* Contact form is handled by @formspree/ajax on contact.html */
 })();
